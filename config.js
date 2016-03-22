@@ -7,5 +7,5 @@
 export default {
   title: 'Devin Argenta',
   description: 'Front End Developer.',
-  googleAnalyticsId: 'UA-XXXXX-X',
+  googleAnalyticsId: 'UA-43277259-3',
 };
