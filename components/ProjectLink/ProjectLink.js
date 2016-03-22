@@ -9,7 +9,7 @@ import './ProjectLink.scss';
 
 function ProjectLink({name, link, details, type = null}) {
   let content;
-  let okay = null;
+  let extra = null;
   if (type === 'fed') {
     content = (
       <svg width="25px" viewBox="0 0 50 36" version="1.1">
@@ -34,17 +34,18 @@ function ProjectLink({name, link, details, type = null}) {
   }
 
   if (name === 'Purnell School') {
-    okay = (<span className="project-extra">Check out <a href="http://www.purnell.org/the-purnell-difference">The Purnell Difference</a></span>);
+    extra = (<span className="project-extra">Check out <a href="http://www.purnell.org/the-purnell-difference">The Purnell Difference</a></span>);
   } else {
-    okay = null;
+    extra = null;
   }
   return (
     <li className="project-item">
+      <span className={'project-type'}>{content}</span>
       <h3 className="project-name"><a target="_blank" href={link}>{name}</a></h3>
       <a className="project-link" href={link} target="_blank">{link}</a>
       <span className="project-details">{details}</span>
-      <span className={'project-type'}>{content}</span>
-      {okay}
+      {extra}
+
     </li>
   );
 }
