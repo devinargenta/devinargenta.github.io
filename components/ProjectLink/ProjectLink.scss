@@ -1,0 +1,96 @@
+
+.project-list {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  position: relative;
+  li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    &:before {
+      content: 'Front End Developer';
+      position: absolute;
+      right: 100px;
+      top: 50%;
+      transform: translateY(-50%) scale(0);
+      opacity: 0;
+      padding: 10px 20px;
+      background: rgba(0,0,0,.2);
+      color: #fff;
+      transition: .3s ease-in-out;
+      font-size: 12px;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+      }
+    }
+    svg g {
+      transition: .25s ease-in-out;
+    }
+    &:hover {
+      background: rgba(0,0,0,.025);
+    svg  g {
+        fill: $brand-color
+      }
+    }
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+  a {
+    color: inherit;
+    transition: .25s ease-out;
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+.project-link{
+  font-weight: 600;
+  font-size: 14px;
+  color: #2082ED;
+  transition: .2s ease-in;
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.project-type {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 100px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 0;
+
+}
+
+.project-details {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+.project-extra {
+  font-size: 12px;
+  margin: 5px 0 0 ;
+  a {
+    color: $brand-color;
+    &:hover {
+      color: $text-color;
+    }
+  }
+}

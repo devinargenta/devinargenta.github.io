@@ -7,6 +7,14 @@
 import React from 'react';
 import './Navigation.scss';
 import Link from '../Link';
+/**
+<li className="Navigation-item">
+  <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
+</li>
+<li className="Navigation-item">
+  <a className="Navigation-link" href="/blog" onClick={Link.handleClick}>Blog</a>
+</li>
+*/
 
 function Navigation() {
   return (
@@ -15,7 +23,10 @@ function Navigation() {
         <a className="Navigation-link" href="/" onClick={Link.handleClick}>Home</a>
       </li>
       <li className="Navigation-item">
-        <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
+        <a className="Navigation-link" href="/resume" onClick={Link.handleClick}>Resume</a>
+      </li>
+      <li className="Navigation-item">
+        <a className="Navigation-link" target="_blank" href="http://github.com/devinargenta">Github</a>
       </li>
     </ul>
   );
