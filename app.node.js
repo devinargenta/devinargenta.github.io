@@ -65,7 +65,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(23);
+  var _reactDom = __webpack_require__(24);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -90,6 +90,8 @@ module.exports =
       return __webpack_require__(14);
     }, '/projects': function projects() {
       return __webpack_require__(4);
+    }, '/resume': function resume() {
+      return __webpack_require__(15);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function route(path, callback) {
@@ -234,15 +236,15 @@ module.exports =
 
   var _fbjsLibExecutionEnvironment = __webpack_require__(5);
 
-  var _historyLibCreateBrowserHistory = __webpack_require__(20);
+  var _historyLibCreateBrowserHistory = __webpack_require__(21);
 
   var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
 
-  var _historyLibCreateMemoryHistory = __webpack_require__(21);
+  var _historyLibCreateMemoryHistory = __webpack_require__(22);
 
   var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
 
-  var _historyLibUseQueries = __webpack_require__(22);
+  var _historyLibUseQueries = __webpack_require__(23);
 
   var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
 
@@ -349,7 +351,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(15);
+  __webpack_require__(16);
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
@@ -419,7 +421,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(16);
+  __webpack_require__(17);
 
   var _Navigation = __webpack_require__(9);
 
@@ -503,7 +505,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(17);
+  __webpack_require__(18);
 
   var _coreLocation = __webpack_require__(3);
 
@@ -606,7 +608,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(18);
+  __webpack_require__(19);
 
   var _Link = __webpack_require__(8);
 
@@ -680,7 +682,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(19);
+  __webpack_require__(20);
 
   function ProjectLink(_ref) {
     var name = _ref.name;
@@ -690,7 +692,7 @@ module.exports =
     var type = _ref$type === undefined ? null : _ref$type;
 
     var content = undefined;
-    var okay = null;
+    var extra = null;
     if (type === 'fed') {
       content = _react2['default'].createElement(
         'svg',
@@ -722,7 +724,7 @@ module.exports =
     }
 
     if (name === 'Purnell School') {
-      okay = _react2['default'].createElement(
+      extra = _react2['default'].createElement(
         'span',
         { className: 'project-extra' },
         'Check out ',
@@ -733,11 +735,16 @@ module.exports =
         )
       );
     } else {
-      okay = null;
+      extra = null;
     }
     return _react2['default'].createElement(
       'li',
       { className: 'project-item' },
+      _react2['default'].createElement(
+        'span',
+        { className: 'project-type' },
+        content
+      ),
       _react2['default'].createElement(
         'h3',
         { className: 'project-name' },
@@ -757,12 +764,7 @@ module.exports =
         { className: 'project-details' },
         details
       ),
-      _react2['default'].createElement(
-        'span',
-        { className: 'project-type' },
-        content
-      ),
-      okay
+      extra
     );
   }
 
@@ -1034,15 +1036,66 @@ module.exports =
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(2)();
-  // imports
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
 
+  'use strict';
 
-  // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nh1 {\n  font-size: 28px;\n  font-weight: 700;\n  line-height: .9em;\n  margin: 10px 0 0;\n  text-transform: uppercase;\n}\n\nh2 {\n  font-size: 22px;\n  font-weight: 400;\n  margin: 0 auto 20px;\n}\n", ""]);
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
 
-  // exports
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'h1',
+            null,
+            'Resume'
+          ),
+          _react2['default'].createElement(
+            'p',
+            null,
+            'Coming soon.'
+          )
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports['default'] = _default;
+  module.exports = exports['default'];
 
 /***/ },
 /* 16 */
@@ -1053,7 +1106,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n*, *:before, *:after {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\nhtml, body {\n  margin: 0;\n  padding: 0;\n  background-color: #f0f0f0;\n  color: #4A4A4A;\n  font-family: 'Avenir Next','Helvetica',sans-serif;\n}\nbody {\n  padding: 0 20px;\n}\na {\n  text-decoration: none;\n}\n.Layout {\n  margin: 0 auto;\n  width: 100%;\n}\n\n@media (min-width: 768px) {\n  .Layout {\n    max-width: calc(768px - 18px);\n  }\n}\n\n@media (min-width: 992px) {\n  .Layout {\n    max-width: calc(992px - 22px);\n  }\n}\n\n@media (min-width: 1080px) {\n  .Layout {\n    max-width: calc(1080px - 30px);\n  }\n}\n\n.intro-header {\n  text-align: center;\n  border-bottom: 1px solid #ddd;\n  max-width: 500px;\n  margin: 40px auto;\n  padding-bottom: 20px;\n}\n\nfooter {\n  margin: 30px 0;\n  font-weight: medium;\n  font-size: 14px;\n  text-align: right;\n  text-align: center;\n}\n\nfooter a {}\n\n@media (min-width: 768px ){\n  footer {\n    text-align: right;\n  }\n  }\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nh1 {\n  font-size: 28px;\n  font-weight: 700;\n  line-height: .9em;\n  margin: 10px 0 0;\n  text-transform: uppercase;\n}\n\nh2 {\n  font-size: 22px;\n  font-weight: 400;\n  margin: 0 auto 20px;\n}\n", ""]);
 
   // exports
 
@@ -1067,7 +1120,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n.Link {\n\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n*, *:before, *:after {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\nhtml, body {\n  margin: 0;\n  padding: 0;\n  background-color: #f0f0f0;\n  color: #4A4A4A;\n  font-family: 'Avenir Next','Helvetica',sans-serif;\n}\nbody {\n  padding: 0 20px;\n}\na {\n  text-decoration: none;\n}\n.Layout {\n  margin: 0 auto;\n  width: 100%;\n}\n\n@media (min-width: 768px) {\n  .Layout {\n    max-width: calc(768px - 18px);\n  }\n}\n\n@media (min-width: 992px) {\n  .Layout {\n    max-width: calc(992px - 22px);\n  }\n}\n\n@media (min-width: 1080px) {\n  .Layout {\n    max-width: calc(1080px - 30px);\n  }\n}\n\n.intro-header {\n  text-align: center;\n  border-bottom: 1px solid #ddd;\n  max-width: 500px;\n  margin: 40px auto;\n  padding-bottom: 20px;\n}\n\nfooter {\n  margin: 30px 0;\n  font-weight: medium;\n  font-size: 14px;\n  text-align: right;\n  text-align: center;\n}\n\nfooter a {}\n\n@media (min-width: 768px ){\n  footer {\n    text-align: right;\n  }\n  }\n", ""]);
 
   // exports
 
@@ -1081,7 +1134,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Navigation {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 2em 0 5em 0;\n  list-style: none;\n  -webkit-box-pack: end;\n  -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  padding: 0;\n}\n\n.Navigation-item {\n\n}\n\n.Navigation-link {\n  padding: 0.5em ;\n  color: #4A4A4A;\n  text-decoration: none;\n  text-transform: uppercase;\n  cursor: pointer;\n  font-size: 16px;\n  -webkit-transition: .25s ease-out;\n  -o-transition: .25s ease-out;\n  transition: .25s ease-out\n}\n\n.Navigation-link:hover {\n  color: #2082ED;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n.Link {\n\n}\n", ""]);
 
   // exports
 
@@ -1095,31 +1148,45 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "\n.project-list {\n  list-style: none;\n  padding: 20px 0;\n  margin: 0;\n  position: relative;\n}\n\n.project-list li {\n  padding: 20px;\n  border-bottom: 1px solid #ddd;\n  position: relative;\n}\n\n.project-list li svg g {\n  -webkit-transition: .25s ease-in-out;\n  -o-transition: .25s ease-in-out;\n  transition: .25s ease-in-out;\n}\n\n.project-list li:before {\n  content: 'Front End Developer';\n  position: absolute;\n  right: 100px;\n  top: 50%;\n  -webkit-transform: translateY(-50%) scale(0);\n      -ms-transform: translateY(-50%) scale(0);\n       -o-transform: translateY(-50%) scale(0);\n          transform: translateY(-50%) scale(0);\n  opacity: 0;\n  padding: 10px 20px;\n  background: rgba(0,0,0,.2);\n  color: #fff;\n  -webkit-transition: .3s ease-in-out;\n  -o-transition: .3s ease-in-out;\n  transition: .3s ease-in-out;\n  font-size: 12px;\n}\n\n.project-list li:hover {}\n\n.project-list li:hover:before {\n  opacity: 1;\n  -webkit-transform: translateY(-50%) scale(1);\n      -ms-transform: translateY(-50%) scale(1);\n       -o-transform: translateY(-50%) scale(1);\n          transform: translateY(-50%) scale(1);\n}\n\n.project-list li:hover {\n  background: rgba(0,0,0,.025);\n}\n\n.project-list li:hover svg  g {\n  fill: $brand-color;\n}\n\n.project-list li:last-of-type {\n  border-bottom: 0;\n}\n\n.project-name {\n  font-weight: 700;\n  font-size: 22px;\n  margin: 0;\n}\n\n.project-name a {\n  color: inherit;\n  -webkit-transition: .25s ease-out;\n  -o-transition: .25s ease-out;\n  transition: .25s ease-out\n}\n\n.project-name a:hover {\n  color: $text-color;\n}\n.project-link{\n  font-weight: 600;\n  font-size: 14px;\n  color: #2082ED;\n  -webkit-transition: .2s ease-in;\n  -o-transition: .2s ease-in;\n  transition: .2s ease-in\n}\n.project-link:hover {\n  color: $text-color;\n}\n\n.project-type {\n  display: block;\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n      -ms-transform: translateY(-50%);\n       -o-transform: translateY(-50%);\n          transform: translateY(-50%);\n  right: 20px;\n  width: 100px;\n  font-weight: 900;\n  text-align: center;\n  line-height: 0;\n\n}\n\n.project-details {\n  display: block;\n  font-size: 12px;\n  margin-top: 5px;\n}\n\n\n.project-extra {\n  font-size: 12px;\n  margin: 5px 0 0 ;\n}\n\n\n.project-extra a {\n  color: $brand-color\n}\n\n\n.project-extra a:hover {\n  color: $text-color;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.Navigation {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 2em 0 5em 0;\n  list-style: none;\n  -webkit-box-pack: end;\n  -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  padding: 0;\n}\n\n.Navigation-item {\n\n}\n\n.Navigation-link {\n  padding: 0.5em ;\n  color: #4A4A4A;\n  text-decoration: none;\n  text-transform: uppercase;\n  cursor: pointer;\n  font-size: 16px;\n  -webkit-transition: .25s ease-out;\n  -o-transition: .25s ease-out;\n  transition: .25s ease-out\n}\n\n.Navigation-link:hover {\n  color: #2082ED;\n}\n", ""]);
 
   // exports
 
 
 /***/ },
 /* 20 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("history/lib/createBrowserHistory");
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.project-list {\n  list-style: none;\n  padding: 20px 0;\n  margin: 0;\n  position: relative;\n}\n.project-item {\n  padding: 20px;\n  border-bottom: 1px solid #ddd;\n  position: relative;\n  text-align: center;\n}\n.project-item svg g {\n  -webkit-transition: 0.25s ease-in-out;\n  -o-transition: 0.25s ease-in-out;\n  transition: 0.25s ease-in-out;\n}\n@media (min-width: 768px){\n\n  .project-item {\n    text-align: left;\n  }\n  }\n.project-item:before {\n  display: none;\n  content: 'Front End Developer';\n  position: absolute;\n  right: 100px;\n  top: 50%;\n  -webkit-transform: translateY(-50%) scale(0);\n      -ms-transform: translateY(-50%) scale(0);\n       -o-transform: translateY(-50%) scale(0);\n          transform: translateY(-50%) scale(0);\n  opacity: 0;\n  padding: 10px 20px;\n  background: rgba(0,0,0,.2);\n  color: #fff;\n  -webkit-transition: 0.3s ease-in-out;\n  -o-transition: 0.3s ease-in-out;\n  transition: 0.3s ease-in-out;\n  font-size: 12px;\n}\n@media (min-width: 768px) {\n\n  .project-item:before {\n    display: block;\n  }\n}\n.project-item:hover {}\n.project-item:hover:before {\n  opacity: 1;\n  -webkit-transform: translateY(-50%) scale(1);\n      -ms-transform: translateY(-50%) scale(1);\n       -o-transform: translateY(-50%) scale(1);\n          transform: translateY(-50%) scale(1);\n}\n.project-item:hover {\n  background: rgba(0,0,0,.025);\n}\n.project-item:hover svg g {\n  fill: #2082ED;\n}\n.project-item:last-of-type {\n  border-bottom: 0;\n}\n.project-name {\n  font-weight: 700;\n  font-size: 22px;\n  margin: 0;\n}\n.project-name a {\n  color: inherit;\n  -webkit-transition: 0.25s ease-out;\n  -o-transition: 0.25s ease-out;\n  transition: 0.25s ease-out\n}\n.project-name a:hover {\n  color: #4A4A4A;\n}\n.project-link {\n  font-weight: 600;\n  font-size: 14px;\n  color: #2082ED;\n  -webkit-transition: 0.2s ease-in;\n  -o-transition: 0.2s ease-in;\n  transition: 0.2s ease-in\n}\n.project-link:hover {\n  color: #4A4A4A;\n}\n.project-type {\n  display: block;\n  font-weight: 900;\n  text-align: center;\n  line-height: 0;\n  margin: 0 auto 20px auto;\n  width: 100%;\n\n}\n@media (min-width:768px) {\n  .project-type {\n  position: absolute;\n  width: 100px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n      -ms-transform: translateY(-50%);\n       -o-transform: translateY(-50%);\n          transform: translateY(-50%);\n  right: 20px;\n  margin: 0;\n  }\n}\n.project-details {\n  display: block;\n  font-size: 12px;\n  margin-top: 5px;\n}\n.project-extra {\n  font-size: 12px;\n  margin: 5px 0 0;\n}\n.project-extra a {\n  color: #2082ED\n}\n.project-extra a:hover {\n  color: #4A4A4A;\n}\n", ""]);
+
+  // exports
+
 
 /***/ },
 /* 21 */
 /***/ function(module, exports) {
 
-  module.exports = require("history/lib/createMemoryHistory");
+  module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
 /* 22 */
 /***/ function(module, exports) {
 
-  module.exports = require("history/lib/useQueries");
+  module.exports = require("history/lib/createMemoryHistory");
 
 /***/ },
 /* 23 */
+/***/ function(module, exports) {
+
+  module.exports = require("history/lib/useQueries");
+
+/***/ },
+/* 24 */
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
