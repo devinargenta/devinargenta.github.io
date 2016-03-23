@@ -43,7 +43,7 @@ export default class extends Component {
               <div className="contact-info">
                 <strong>Email</strong>
                 <div className="email">
-                  <a className="__cf_email__" href="mailto:devin@devinargenta.com">{basics.email}</a>
+                  <a href="mailto:devin@devinargenta.com">{basics.email}</a>
                 </div>
               </div>
               <div className="contact-info">

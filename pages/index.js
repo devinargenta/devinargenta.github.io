@@ -6,11 +6,14 @@
 
 import React, { Component } from 'react';
 import Projects from './projects/index';
+import IntroHeader from '../components/IntroHeader/IntroHeader.js';
+
 export default class extends Component {
 
   render() {
     return (
     <div>
+        <IntroHeader />
         <Projects />
       </div>
     );
