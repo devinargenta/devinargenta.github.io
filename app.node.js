@@ -65,7 +65,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(27);
+  var _reactDom = __webpack_require__(24);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -81,17 +81,17 @@ module.exports =
 
   var routes = {
     '/404': function _() {
-      return __webpack_require__(12);
+      return __webpack_require__(11);
     }, '/500': function _() {
-      return __webpack_require__(13);
+      return __webpack_require__(12);
     }, '/about': function about() {
-      return __webpack_require__(14);
+      return __webpack_require__(13);
     }, '/': function _() {
-      return __webpack_require__(15);
+      return __webpack_require__(14);
     }, '/projects': function projects() {
       return __webpack_require__(4);
     }, '/resume': function resume() {
-      return __webpack_require__(16);
+      return __webpack_require__(15);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function route(path, callback) {
@@ -236,15 +236,15 @@ module.exports =
 
   var _fbjsLibExecutionEnvironment = __webpack_require__(5);
 
-  var _historyLibCreateBrowserHistory = __webpack_require__(24);
+  var _historyLibCreateBrowserHistory = __webpack_require__(21);
 
   var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
 
-  var _historyLibCreateMemoryHistory = __webpack_require__(25);
+  var _historyLibCreateMemoryHistory = __webpack_require__(22);
 
   var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
 
-  var _historyLibUseQueries = __webpack_require__(26);
+  var _historyLibUseQueries = __webpack_require__(23);
 
   var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
 
@@ -351,7 +351,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(17);
+  __webpack_require__(16);
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
@@ -437,7 +437,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(18);
+  __webpack_require__(17);
 
   var _Navigation = __webpack_require__(9);
 
@@ -516,7 +516,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(19);
+  __webpack_require__(18);
 
   var _coreLocation = __webpack_require__(3);
 
@@ -619,7 +619,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(20);
+  __webpack_require__(19);
 
   var _Link = __webpack_require__(8);
 
@@ -693,7 +693,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(21);
+  __webpack_require__(20);
 
   function ProjectLink(_ref) {
     var name = _ref.name;
@@ -812,342 +812,6 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _resumeJson = __webpack_require__(23);
-
-  var _resumeJson2 = _interopRequireDefault(_resumeJson);
-
-  __webpack_require__(22);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'getWork',
-      value: function getWork() {
-        return _resumeJson2['default'].work.map(function (work) {
-          return _react2['default'].createElement(
-            'div',
-            { className: 'work-container', key: work.startDate },
-            _react2['default'].createElement(
-              'h4',
-              null,
-              work.company
-            ),
-            _react2['default'].createElement(
-              'span',
-              { className: 'position' },
-              work.position
-            ),
-            _react2['default'].createElement(
-              'span',
-              { className: 'date' },
-              work.startDate,
-              '- ',
-              work.endDate
-            ),
-            _react2['default'].createElement(
-              'p',
-              { className: 'summary' },
-              work.summary
-            ),
-            _react2['default'].createElement(
-              'h4',
-              null,
-              'Highlights'
-            ),
-            _react2['default'].createElement(
-              'ul',
-              null,
-              work.highlights.map(function (highlight) {
-                return _react2['default'].createElement(
-                  'li',
-                  null,
-                  highlight
-                );
-              })
-            )
-          );
-        });
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        var basics = _resumeJson2['default'].basics;
-        return _react2['default'].createElement(
-          'div',
-          { id: 'content', className: 'container' },
-          _react2['default'].createElement(
-            'section',
-            { id: 'contact', className: 'row' },
-            _react2['default'].createElement(
-              'aside',
-              { className: 'resume-name' },
-              _react2['default'].createElement(
-                'h3',
-                null,
-                basics.name
-              )
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'contact-info-container' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'contact-info' },
-                _react2['default'].createElement(
-                  'strong',
-                  null,
-                  'Email'
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'email' },
-                  _react2['default'].createElement(
-                    'a',
-                    { href: 'mailto:devin@devinargenta.com' },
-                    basics.email
-                  )
-                )
-              ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'contact-info' },
-                _react2['default'].createElement(
-                  'strong',
-                  null,
-                  'Phone'
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'phone' },
-                  basics.phone
-                )
-              ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'contact-info' },
-                _react2['default'].createElement(
-                  'strong',
-                  null,
-                  'Website'
-                ),
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'website' },
-                  _react2['default'].createElement(
-                    'a',
-                    { href: basics.website },
-                    basics.website
-                  )
-                )
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'section',
-            { id: 'about', className: 'row' },
-            _react2['default'].createElement(
-              'aside',
-              { className: 'col-sm-3' },
-              _react2['default'].createElement(
-                'h3',
-                null,
-                'About'
-              )
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-9' },
-              _react2['default'].createElement(
-                'p',
-                null,
-                basics.summary
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'section',
-            { id: 'profiles', className: 'row' },
-            _react2['default'].createElement(
-              'aside',
-              { className: 'col-sm-3' },
-              _react2['default'].createElement(
-                'h3',
-                null,
-                'Profiles'
-              )
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-9' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row' },
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'col-sm-6' },
-                  _react2['default'].createElement(
-                    'strong',
-                    { className: 'network' },
-                    basics.profiles[0].network
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'username' },
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'url' },
-                      _react2['default'].createElement(
-                        'a',
-                        { href: basics.profiles[0].url },
-                        basics.profiles[0].username
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'section',
-            { id: 'work', className: 'row' },
-            this.getWork()
-          ),
-          _react2['default'].createElement(
-            'section',
-            { id: 'awards', className: 'row' },
-            _react2['default'].createElement(
-              'aside',
-              { className: 'col-sm-3' },
-              _react2['default'].createElement(
-                'h3',
-                null,
-                'Awards'
-              )
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-9' },
-              _resumeJson2['default'].awards.map(function (award) {
-                return _react2['default'].createElement(
-                  'div',
-                  { className: 'col-sm-6' },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'name' },
-                    _react2['default'].createElement(
-                      'h4',
-                      null,
-                      award.title
-                    )
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'date' },
-                    award.date
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'awarder' },
-                    award.awarder
-                  )
-                );
-              })
-            )
-          ),
-          _react2['default'].createElement(
-            'section',
-            { id: 'skills', className: 'row' },
-            _react2['default'].createElement(
-              'aside',
-              { className: 'col-sm-3' },
-              _react2['default'].createElement(
-                'h3',
-                null,
-                'Skills'
-              )
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'col-sm-9' },
-              _react2['default'].createElement(
-                'div',
-                { className: 'row' },
-                _resumeJson2['default'].skills.map(function (skill) {
-                  return _react2['default'].createElement(
-                    'div',
-                    { className: 'col-sm-6' },
-                    _react2['default'].createElement(
-                      'div',
-                      { className: 'name' },
-                      _react2['default'].createElement(
-                        'h4',
-                        null,
-                        skill.name
-                      )
-                    ),
-                    _react2['default'].createElement(
-                      'ul',
-                      { className: 'keywords' },
-                      skill.keywords.map(function (key) {
-                        return _react2['default'].createElement(
-                          'li',
-                          null,
-                          key
-                        );
-                      })
-                    )
-                  );
-                })
-              )
-            )
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
   var _default = (function (_Component) {
     _inherits(_default, _Component);
 
@@ -1184,7 +848,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 13 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1255,7 +919,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 14 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1320,7 +984,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1385,7 +1049,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1414,9 +1078,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsResumeResumeJs = __webpack_require__(11);
-
-  var _componentsResumeResumeJs2 = _interopRequireDefault(_componentsResumeResumeJs);
+  // import Resume from '../components/Resume/Resume.js';
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
@@ -1429,11 +1091,13 @@ module.exports =
 
     _createClass(_default, [{
       key: 'render',
+
+      // <Resume />
       value: function render() {
         return _react2['default'].createElement(
           'div',
           null,
-          _react2['default'].createElement(_componentsResumeResumeJs2['default'], null)
+          '"Resume Coming Soon"'
         );
       }
     }]);
@@ -1445,7 +1109,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1459,7 +1123,7 @@ module.exports =
 
 
 /***/ },
-/* 18 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1473,7 +1137,7 @@ module.exports =
 
 
 /***/ },
-/* 19 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1487,7 +1151,7 @@ module.exports =
 
 
 /***/ },
-/* 20 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1501,7 +1165,7 @@ module.exports =
 
 
 /***/ },
-/* 21 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1515,124 +1179,25 @@ module.exports =
 
 
 /***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-
-
-  // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\na {\n  color: #2082ED\n}\n\na:hover {\n  color: #4A4A4A\n}\n\n.row:not(#contact) {\n\n  display: -webkit-box;\n\n  display: -webkit-flex;\n\n  display: -ms-flexbox;\n\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: column;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-align-content: center;\n      -ms-flex-line-pack: center;\n          align-content: center\n}\n\n@media (min-width: 768px){\n\n  .row:not(#contact) {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row\n  }\n  }\n.row {\n  margin: 0;\n  margin-bottom: 30px;\n}\nh4, h3 {\n  margin: 0;\n  margin-bottom: 15px;\n}\n.col-sm-9 {\n  -webkit-flex-basis: auto;\n      -ms-flex-preferred-size: auto;\n          flex-basis: auto\n}\n@media (min-width: 768px){\n\n  .col-sm-9 {\n    -webkit-flex-basis: 75%;\n        -ms-flex-preferred-size: 75%;\n            flex-basis: 75%\n  }\n  }\n.col-sm-3 {\n  -webkit-flex-basis: auto;\n      -ms-flex-preferred-size: auto;\n          flex-basis: auto\n}\n@media (min-width: 768px){\n\n  .col-sm-3 {\n    -webkit-flex-basis: 25%;\n        -ms-flex-preferred-size: 25%;\n            flex-basis: 25%\n  }\n  }\n.col-sm-6 {\n  -webkit-flex-basis: auto;\n      -ms-flex-preferred-size: auto;\n          flex-basis: auto\n}\n@media (min-width: 768px){\n\n  .col-sm-6 {\n    -webkit-flex-basis: 50%;\n        -ms-flex-preferred-size: 50%;\n            flex-basis: 50%\n  }\n  }\n", ""]);
-
-  // exports
-
-
-/***/ },
-/* 23 */
-/***/ function(module, exports) {
-
-  module.exports = {
-  	"basics": {
-  		"name": "Devin Argenta",
-  		"label": "Front End Web Developer",
-  		"picture": "",
-  		"email": "devin@devinargenta.com",
-  		"phone": "860-575-7765",
-  		"website": "http://devinargenta.github.io",
-  		"summary": "I am currently employeed full time at Finalsite as a Senior Front End Web Developer, developing cutting edge websites for schools across the world. I take pride in what I do - from the big picture to down to the smallest detail, I want to create a user experience that is not only wonderful to use - it solves problems.",
-  		"location": {
-  			"address": "671 Main Street",
-  			"postalCode": "06416",
-  			"city": "Cromwell",
-  			"countryCode": "US",
-  			"region": "Connecticut"
-  		},
-  		"profiles": [
-  			{
-  				"network": "github",
-  				"username": "devinargenta",
-  				"url": "http://devinargenta.github.io"
-  			}
-  		]
-  	},
-  	"work": [
-  		{
-  			"company": "Finalsite",
-  			"position": "Senior Front End Web Developer",
-  			"website": "http://www.finalsite.com",
-  			"startDate": "2015-09-01",
-  			"endDate": "2016-04-01",
-  			"summary": "Working as a Senior Developer gave me the opportunity to help other developers work smarter and more efficiently. I was able to spend more time going over new solutions to old problems, enhance our internal build tools, and help our software team find new ways to increase our productivity with the software. Additionally, I implemented new build features into our workflow, including an optimized gulp build, and a strong git workflow.",
-  			"highlights": [
-  				"Manage and develop internal framework to help maintain structure and organization throughout buildouts - cutting down production and testing time",
-  				"Developed \"Best In Class\" websites for high profile clients",
-  				"Code Review of other developers",
-  				"Train and support coworkers in our Git Worfklow"
-  			]
-  		},
-  		{
-  			"company": "Finalsite",
-  			"position": "Front End Web Developer",
-  			"website": "http://www.finalsite.com",
-  			"startDate": "2014-06-01",
-  			"endDate": "2015-09-01",
-  			"summary": "Developed over 40 responsive websites using SCSS, HTML, JS and build tools like Grunt, Gulp, and more.",
-  			"highlights": [
-  				"Maintain tight, strict client deadlines, managing full responsive buildouts",
-  				"Helped create an internal framework for responsive designs",
-  				"Helped develop process for internal assets and tooling"
-  			]
-  		}
-  	],
-  	"awards": [
-  		{
-  			"title": "Asheville School",
-  			"date": "2015-09-01",
-  			"awarder": "W3 Award",
-  			"summary": ""
-  		}
-  	],
-  	"skills": [
-  		{
-  			"name": "Web Development",
-  			"keywords": [
-  				"HTML",
-  				"CSS",
-  				"Javascript",
-  				"jQuery",
-  				"SCSS",
-  				"Grunt / Gulp",
-  				"git",
-  				"ReactJS",
-  				"Babel & ES6",
-  				"Server Side Templating",
-  				"UI Design & Development"
-  			]
-  		}
-  	]
-  };
-
-/***/ },
-/* 24 */
+/* 21 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
-/* 25 */
+/* 22 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createMemoryHistory");
 
 /***/ },
-/* 26 */
+/* 23 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
 /***/ },
-/* 27 */
+/* 24 */
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
