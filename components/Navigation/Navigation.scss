@@ -11,8 +11,11 @@
   flex-direction: row;
   margin: 2em 0 5em 0;
   list-style: none;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0;
+  @media (min-width: $screen-sm-min){
+    justify-content: flex-end;
+  }
 }
 
 .Navigation-item {

@@ -1,0 +1,39 @@
+@import '../variables.scss';
+
+.row:not(#contact) {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  @media (min-width: $screen-sm-min){
+    flex-direction: row;
+  }
+}
+.row {
+  margin: 0;
+  margin-bottom: 30px;
+}
+h4, h3 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.col-sm-9 {
+  flex-basis: auto;
+  @media (min-width: $screen-sm-min){
+    flex-basis: 75%;
+  }
+}
+.col-sm-3 {
+  flex-basis: auto;
+  @media (min-width: $screen-sm-min){
+    flex-basis: 25%;
+  }
+}
+.col-sm-6 {
+  flex-basis: auto;
+  @media (min-width: $screen-sm-min){
+    flex-basis: 50%;
+  }
+}
