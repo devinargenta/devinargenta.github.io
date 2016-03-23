@@ -17,3 +17,14 @@ h2 {
 p {
   margin: 5px 0;
 }
+.email {
+  svg, a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  svg {
+    fill: $text-color;
+    margin-right: 5px;
+    height: 25px;
+  }
+}
