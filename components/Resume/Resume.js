@@ -13,12 +13,14 @@ export default class extends Component {
     return Data.work.map((work) => {
       return (
         <div className="work-container" key={work.startDate}>
+          <div><span className="date">{work.startDate}
+            - {work.endDate}</span></div>
           <h4>{work.company}</h4>
-          <span className="position">{work.position}</span>
-          <span className="date">{work.startDate}
-            - {work.endDate}</span>
+          <div><a href={work.website}>{work.website}</a></div>
+          <div><span className="position">{work.position}</span></div>
+
           <p className="summary">{work.summary}</p>
-          <h4>Highlights</h4>
+          <h5>Highlights</h5>
           <ul>
             {work.highlights.map((highlight) => {
               return (
@@ -58,87 +60,74 @@ export default class extends Component {
               </div>
           </div>
         </section>
-        <section id="about" className="row">
-          <aside className="col-sm-3">
-            <h3>About</h3>
-          </aside>
-          <div className="col-sm-9">
-            <p>{basics.summary}</p>
-          </div>
-        </section>
-        <section id="profiles" className="row">
-          <aside className="col-sm-3">
-            <h3>Profiles</h3>
-          </aside>
-          <div className="col-sm-9">
-            <div className="row">
-              <div className="col-sm-6">
-                <strong className="network">
-                  {basics.profiles[0].network}
-                </strong>
-                <div className="username">
-                  <div className="url">
-                    <a href={basics.profiles[0].url}>{basics.profiles[0].username}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section id="work" className="row">
-          {this.getWork()}
-        </section>
-        <section id="awards" className="row">
-          <aside className="col-sm-3">
-            <h3>Awards</h3>
-          </aside>
-          <div className="col-sm-9">
+          <div className="col-sm-4">
+            <section id="about" className="row">
 
-            {Data.awards.map((award) => {
-              return (
-                <div className="col-sm-6">
-                  <div className="name">
-                    <h4>{award.title}</h4>
-                  </div>
-                  <div className="date">
-                    {award.date}
-                  </div>
-                  <div className="awarder">
-                    {award.awarder}
-                  </div>
+                <h3>About</h3>
+
+              <div >
+                <p>{basics.summary}</p>
+              </div>
+            </section>
+              <div >
+                <h3>Skills</h3>
+                <div className="row">
+
+                  {Data.skills.map((skill) => {
+                    return (
+                      <div className="col-sm-6">
+
+                        <div className="name">
+                          <h4>{skill.name}</h4>
+                        </div>
+                        <ul className="keywords">
+                          {skill.keywords.map((key) => {
+                            return (
+                              <li>{key}</li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
+              </div>
+              <section id="awards" className="row">
+                <aside>
+                  <h3>Awards</h3>
+                </aside>
+                <div>
+
+                  {Data.awards.map((award) => {
+                    return (
+                      <div >
+                        <div className="name">
+                          <h4>{award.title}</h4>
+                        </div>
+                        <div className="awarder">
+                          {award.awarder}
+                        </div>
+                        <div className="date">
+                          {award.date}
+                        </div>
+
+                      </div>
+                    );
+                  })}
+                </div>
+
+            </section>
           </div>
-        </section>
 
-        <section id="skills" className="row">
-          <aside className="col-sm-3">
-            <h3>Skills</h3>
-          </aside>
-          <div className="col-sm-9">
-            <div className="row">
-
-              {Data.skills.map((skill) => {
-                return (
-                  <div className="col-sm-6">
-                    <div className="name">
-                      <h4>{skill.name}</h4>
-                    </div>
-                    <ul className="keywords">
-                      {skill.keywords.map((key) => {
-                        return (
-                          <li>{key}</li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                );
-              })}
+          <div className="col-sm-8">
+            <div ><h3>Experience</h3></div>
+            <div >{this.getWork()}</div>
             </div>
-          </div>
-        </section>
+          </section>
+
+
       </div>
 
     );

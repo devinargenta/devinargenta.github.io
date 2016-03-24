@@ -5,8 +5,8 @@
     "picture": "",
     "email": "devin@devinargenta.com",
     "phone": "860-575-7765",
-    "website": "http://devinargenta.github.io",
-    "summary": "I am currently employeed full time at Finalsite as a Senior Front End Web Developer, developing cutting edge websites for schools across the world. I take pride in what I do - from the big picture to down to the smallest detail, I want to create a user experience that is not only wonderful to use - it solves problems.",
+    "website": "http://devinargenta.com",
+    "summary": "I am currently employeed at Finalsite as a Senior Front End Web Developer, developing cutting edge websites for schools across the world. I take pride in what I do - from the big picture to down to the smallest detail, I want to create a user experience that is not only wonderful to use - it solves problems.",
     "location": {
       "address": "671 Main Street",
       "postalCode": "06416",
@@ -18,7 +18,7 @@
       {
         "network": "github",
         "username": "devinargenta",
-        "url": "http://devinargenta.github.io"
+        "url": "http://github.com/devinargenta"
       }
     ]
   },
@@ -28,7 +28,7 @@
       "position": "Senior Front End Web Developer",
       "website": "http://www.finalsite.com",
       "startDate": "2015-09-01",
-      "endDate": "2016-04-01",
+      "endDate": "CURRENT",
       "summary": "Working as a Senior Developer gave me the opportunity to help other developers work smarter and more efficiently. I was able to spend more time going over new solutions to old problems, enhance our internal build tools, and help our software team find new ways to increase our productivity with the software. Additionally, I implemented new build features into our workflow, including an optimized gulp build, and a strong git workflow.",
       "highlights": [
         "Manage and develop internal framework to help maintain structure and organization throughout buildouts - cutting down production and testing time",
@@ -74,6 +74,18 @@
         "Babel & ES6",
         "Server Side Templating",
         "UI Design & Development"
+      ]
+    },
+    {
+      "name": "Design",
+      "keywords": [
+        "Branding",
+        "Lettering",
+        "Typography",
+        "Web Design",
+        "UI Design",
+        "Illustrator, Photoshop, Sketch",
+        "Screen Printing"
       ]
     }
   ]

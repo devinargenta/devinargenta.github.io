@@ -5,13 +5,12 @@
  */
 
 import React, { Component } from 'react';
-// import Resume from '../components/Resume/Resume.js';
+import Resume from '../components/Resume/Resume.js';
 export default class extends Component {
-  // <Resume />
   render() {
     return (
-    <div>
-        "Resume Coming Soon"
+    <div className="resume-container">
+        <Resume />
       </div>
     );
   }
