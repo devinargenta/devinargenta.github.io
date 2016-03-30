@@ -15,10 +15,10 @@ export default class extends Component {
         <div className="work-container" key={work.startDate}>
           <div><span className="date">{work.startDate}
             - {work.endDate}</span></div>
-          <h4>{work.company}</h4>
-          <div><a href={work.website}>{work.website}</a></div>
-          <div><span className="position">{work.position}</span></div>
+          <h4>{work.position}</h4>
+          <h4 className="company">{work.company}</h4>
 
+          <div><a href={work.website}>{work.website}</a></div>
           <p className="summary">{work.summary}</p>
           <h5>Highlights</h5>
           <ul>

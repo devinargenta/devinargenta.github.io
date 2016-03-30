@@ -6,7 +6,7 @@
     "email": "devin@devinargenta.com",
     "phone": "860-575-7765",
     "website": "http://devinargenta.com",
-    "summary": "I am currently employeed at Finalsite as a Senior Front End Web Developer, developing cutting edge websites for schools across the world. I take pride in what I do - from the big picture to down to the smallest detail, I want to create a user experience that is not only wonderful to use - it solves problems.",
+    "summary": "Currently a Senior Front End Web Developer at Finalsite, developing award winning websites for national and international schools. I have over five years of professional experience, with an entrepreneurial background. I have a strong resolution for problem solving, and I strive for the next challenge. In my spare time I am finding new ways to further my learning, and become a better developer.",
     "location": {
       "address": "671 Main Street",
       "postalCode": "06416",
@@ -31,10 +31,10 @@
       "endDate": "CURRENT",
       "summary": "Working as a Senior Developer gave me the opportunity to help other developers work smarter and more efficiently. I was able to spend more time going over new solutions to old problems, enhance our internal build tools, and help our software team find new ways to increase our productivity with the software. Additionally, I implemented new build features into our workflow, including an optimized gulp build, and a strong git workflow.",
       "highlights": [
-        "Manage and develop internal framework to help maintain structure and organization throughout buildouts - cutting down production and testing time",
-        "Developed \"Best In Class\" websites for high profile clients",
-        "Code Review of other developers",
-        "Train and support coworkers in our Git Worfklow"
+        "Continually improved our development workflow, taking charge of our build process and tooling",
+        "Lead transition to a git based workflow",
+        "Built “Best In Class” websites for prestige clients",
+        "Collaborated on CMS with development team on inefficienes in our workflow and potential software improvments"
       ]
     },
     {
@@ -45,9 +45,29 @@
       "endDate": "2015-09-01",
       "summary": "Developed over 40 responsive websites using SCSS, HTML, JS and build tools like Grunt, Gulp, and more.",
       "highlights": [
-        "Maintain tight, strict client deadlines, managing full responsive buildouts",
-        "Helped create an internal framework for responsive designs",
-        "Helped develop process for internal assets and tooling"
+        "Front End Web Devlopment for a proprietary CMS using HTML5, CSS3, JavaScript/jQuery",
+        "Strict deadline management",
+        "Front End framework management, using Grunt/Gulp and SCSS"
+      ]
+    },
+    {
+      "company": "Premier Screen Printing",
+      "position": "Owner, Designer, Developer",
+      "startDate": "2010-01-01",
+      "endDate": "2014-12-31",
+      "summary": "Premier Screen Printing was a business I started out of high school, ...",
+      "highlights": [
+        "Example Highlight"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Front End Web Developer & Designer",
+      "website": "http://www.devinargenta.com",
+      "startDate": "2019-01-01",
+      "endDate": "2014-12-31",
+      "highlights": [
+        "Example Highlight"
       ]
     }
   ],
