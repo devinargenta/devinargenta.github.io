@@ -14,6 +14,7 @@ export default class extends Component {
       <div>
         <ul className="project-list">
           <ProjectLink name="Purnell School" link="http://purnell.org" details="HTML, CSS, JS, GSAP, ScrollMagic" type="fed" />
+          <ProjectLink name="Stick-Em-Up jQuery Plugin" link="https://github.com/devinargenta/stick-em-up" details="jQuery" type="git"/>
           <ProjectLink name="React-Spotify-Search" link="http://devinargenta.github.io/spotify-top-songs-react/" details="ReactJS, Spotify API" type="git"/>
           <ProjectLink name="Loomis Chaffee" link="http://loomischaffee.org" details="HTML, CSS, JS" type="fed" />
           <ProjectLink name="Asheville School" link="http://ashevilleschool.org" details="HTML, CSS, JS, Skrollr" type="fed" />
