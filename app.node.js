@@ -397,7 +397,7 @@ module.exports =
           _react2['default'].createElement(
             'p',
             null,
-            'Currently Senior Front End @Finalsite'
+            'Currently Senior Front End @ESPN'
           ),
           _react2['default'].createElement(
             'p',
@@ -633,6 +633,12 @@ module.exports =
   <li className="Navigation-item">
     <a className="Navigation-link" href="/blog" onClick={Link.handleClick}>Blog</a>
   </li>
+  <li className="Navigation-item">
+    <a className="Navigation-link" href="/" onClick={Link.handleClick}>Home</a>
+  </li>
+  // <li className="Navigation-item">
+  //   <a className="Navigation-link" href="/resume" onClick={Link.handleClick}>Resume</a>
+  // </li>
   */
 
   function Navigation() {
@@ -644,26 +650,26 @@ module.exports =
         { className: 'Navigation-item' },
         _react2['default'].createElement(
           'a',
-          { className: 'Navigation-link', href: '/', onClick: _Link2['default'].handleClick },
-          'Home'
-        )
-      ),
-      _react2['default'].createElement(
-        'li',
-        { className: 'Navigation-item' },
-        _react2['default'].createElement(
-          'a',
-          { className: 'Navigation-link', href: '/resume', onClick: _Link2['default'].handleClick },
-          'Resume'
-        )
-      ),
-      _react2['default'].createElement(
-        'li',
-        { className: 'Navigation-item' },
-        _react2['default'].createElement(
-          'a',
           { className: 'Navigation-link', target: '_blank', href: 'http://github.com/devinargenta' },
           'Github'
+        )
+      ),
+      _react2['default'].createElement(
+        'li',
+        { className: 'Navigation-item' },
+        _react2['default'].createElement(
+          'a',
+          { className: 'Navigation-link', target: '_blank', href: 'http://twitter.com/thegddmndevin' },
+          'Twitter'
+        )
+      ),
+      _react2['default'].createElement(
+        'li',
+        { className: 'Navigation-item' },
+        _react2['default'].createElement(
+          'a',
+          { className: 'Navigation-link', href: 'mailto:devin@devinargenta.com' },
+          'E-Mail'
         )
       )
     );
