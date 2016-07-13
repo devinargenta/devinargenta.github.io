@@ -8,7 +8,7 @@ export default class extends Component {
         <img src="logo.png" width="150"/>
         <h1>Devin Argenta</h1>
         <h2>Front End Web Developer</h2>
-        <p>Currently Senior Front End @Finalsite</p>
+        <p>Currently Senior Front End @ESPN</p>
         <p>Interested in: React, Node, and snacks...</p>
           <div className="email">
             <svg className="email-icon" style={{width: 20, height: 18}} version="1.1" x="0px" y="0px"
