@@ -16,7 +16,7 @@ import Link from '../Link';
 </li>
 <li className="Navigation-item">
   <a className="Navigation-link" href="/" onClick={Link.handleClick}>Home</a>
-</li>
+</li>git
 // <li className="Navigation-item">
 //   <a className="Navigation-link" href="/resume" onClick={Link.handleClick}>Resume</a>
 // </li>
